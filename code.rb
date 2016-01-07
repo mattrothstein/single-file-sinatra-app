@@ -24,7 +24,7 @@ $ruby_code = ""
 ruby_array = File.open(__FILE__).readlines
 
 ruby_array.each_with_index do |line, num|
-  break if num == 38
+  break if num == 41
   $ruby_code += line
 end
 
@@ -32,7 +32,7 @@ $erb_code = ""
 erb_array = File.open(__FILE__).readlines
 
 erb_array.each_with_index do |line, num|
-  if num >= 38
+  if num >= 41
     $erb_code += line
   end
 end
