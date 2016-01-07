@@ -10,6 +10,10 @@ get "/code" do
   { "code" => f.read.to_s }.to_json
 end
 
+get "/" do
+  erb :html
+end
+
 get "/home" do
   erb :html
 end
